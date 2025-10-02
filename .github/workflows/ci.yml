@@ -20,4 +20,4 @@ jobs:
 
       - name: Force Failure
         run: |
-            go version
+            go test ./...
