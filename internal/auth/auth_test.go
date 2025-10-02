@@ -10,7 +10,7 @@ import (
 
 func TestNoAuthorizationKeyShouldFail(t *testing.T) {
 	header := http.Header{}
-	header.Add("Authorization", "ApiKey BreakIt")
+	header.Add("Authorization", "")
 	_, err := auth.GetAPIKey(header)
 
 	if err != nil {
