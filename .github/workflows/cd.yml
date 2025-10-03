@@ -6,6 +6,12 @@ on:
 
 jobs:
     deploy:
+        env:
+          PROJECT_ID: notely-474004
+          REGION: us-central1
+          REPO_NAME: notely-ar-repo
+          IMAGE: notely
+          TAG: latest
         name: Deploy
         runs-on: ubuntu-latest
 
